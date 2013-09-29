@@ -5,24 +5,14 @@
     <title>Pointless Topology</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
     </style>
-    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="shortcut icon" href="/bootstrap/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/bootstrap/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/bootstrap/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/bootstrap/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/bootstrap/ico/apple-touch-icon-57-precomposed.png">
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -40,23 +30,23 @@
 
   <body>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="/">Pointless Topology</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/events">Events</a></li>
-              <li class="active"><a href="/directions">Directions</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+          </button>
+          <a class="navbar-brand" href="/">Pointless Topology</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/events">Events</a></li>
+            <li class="active"><a href="/directions">Directions</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -66,7 +56,7 @@
         <h1>Directions</h1>
       </div>
       <div class="row">
-        <div class="span4">
+        <div class="col-md-4">
           <address>
             <strong>Pointless Topology</strong><br>
             2772 Bryant St.<br>
@@ -74,9 +64,9 @@
             <a href="mailto:contact@pointlesstopology.com">contact@pointlesstopology.com</a>
           </address>
           <hr>
-          <div id="mapviewer"><iframe id="map" Name="mapFrame" scrolling="no" width="350" height="280" frameborder="0" src="http://www.bing.com/maps/embed/?lvl=14&amp;cp=37.7500977630276~-122.40895986557007&amp;sty=r&amp;draggable=true&amp;v=2&amp;dir=0&amp;where1=2772+Bryant+St%2C+San+Francisco%2C+CA+94110&amp;form=LMLTEW&amp;pp=37.750097662210464~-122.40895986557007&amp;mkt=en-us&amp;emid=d7ffea7b-bbc1-333f-54bf-7f7724089814&amp;w=350&amp;h=280"></iframe><div id="LME_maplinks" style="line-height:20px;"><a class="btn" id="LME_largerMap" href="http://www.bing.com/maps/?mm_embed=map&amp;cp=37.7500977630276~-122.40895986557007&amp;lvl=14&amp;sty=r&amp;where1=2772+Bryant+St%2C+San+Francisco%2C+CA+94110&amp;form=LMLTEW" target="_blank">View Larger Map</a>&nbsp;<a class="btn" id="LME_directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.7500977630276~-122.40895986557007&amp;rtp=~pos.37.750097662210464_-122.40895986557007_2772+Bryant+St%2C+San+Francisco%2C+CA+94110&amp;lvl=14&amp;sty=r&amp;form=LMLTEW" target="_blank">Get Directions</a>&nbsp;<a class="btn" id="LME_birdsEye" href="http://www.bing.com/maps/?mm_embed=be&amp;cp=37.7500977630276~-122.40895986557007&amp;lvl=18&amp;sty=b&amp;where1=2772+Bryant+St%2C+San+Francisco%2C+CA+94110&amp;form=LMLTEW" target="_blank">View Bird's Eye</a></div></div>
+          <div id="mapviewer"><iframe id="map" Name="mapFrame" scrolling="no" width="350" height="280" frameborder="0" src="http://www.bing.com/maps/embed/?lvl=14&amp;cp=37.7500977630276~-122.40895986557007&amp;sty=r&amp;draggable=true&amp;v=2&amp;dir=0&amp;where1=2772+Bryant+St%2C+San+Francisco%2C+CA+94110&amp;form=LMLTEW&amp;pp=37.750097662210464~-122.40895986557007&amp;mkt=en-us&amp;emid=d7ffea7b-bbc1-333f-54bf-7f7724089814&amp;w=350&amp;h=280"></iframe><div id="LME_maplinks" style="line-height:20px;"><a class="btn btn-default" id="LME_largerMap" href="http://www.bing.com/maps/?mm_embed=map&amp;cp=37.7500977630276~-122.40895986557007&amp;lvl=14&amp;sty=r&amp;where1=2772+Bryant+St%2C+San+Francisco%2C+CA+94110&amp;form=LMLTEW" target="_blank">View Larger Map</a>&nbsp;<a class="btn btn-default" id="LME_directions" href="http://www.bing.com/maps/?mm_embed=dir&amp;cp=37.7500977630276~-122.40895986557007&amp;rtp=~pos.37.750097662210464_-122.40895986557007_2772+Bryant+St%2C+San+Francisco%2C+CA+94110&amp;lvl=14&amp;sty=r&amp;form=LMLTEW" target="_blank">Get Directions</a>&nbsp;<a class="btn btn-default" id="LME_birdsEye" href="http://www.bing.com/maps/?mm_embed=be&amp;cp=37.7500977630276~-122.40895986557007&amp;lvl=18&amp;sty=b&amp;where1=2772+Bryant+St%2C+San+Francisco%2C+CA+94110&amp;form=LMLTEW" target="_blank">View Bird's Eye</a></div></div>
         </div>
-        <div class="span8">
+        <div class="col-md-8">
           <p>2772 Bryant is the left door of a pair, up a small green staircase from the street, leading to another staircase.</p>
           <h3>Via BART</h3>
           <p>Pointless Topology is a 10-15 minute walk from the 24th and Mission BART station. Head east on 24th Street for about half a mile, then turn right on Bryant for two blocks.</p>
@@ -90,21 +80,9 @@
           <p>We're usually on <a href="http://freenode.net/">Freenode</a> on channel <a href="irc://irc.freenode.net/#ptopology">#ptopology</a>.</p>
         </div>
       </div>
-    </div> <!-- /container -->
+    </div>
 
-    <script src="/bootstrap/js/jquery.js"></script>
-    <script src="/bootstrap/js/bootstrap-transition.js"></script>
-    <script src="/bootstrap/js/bootstrap-alert.js"></script>
-    <script src="/bootstrap/js/bootstrap-modal.js"></script>
-    <script src="/bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="/bootstrap/js/bootstrap-scrollspy.js"></script>
-    <script src="/bootstrap/js/bootstrap-tab.js"></script>
-    <script src="/bootstrap/js/bootstrap-tooltip.js"></script>
-    <script src="/bootstrap/js/bootstrap-popover.js"></script>
-    <script src="/bootstrap/js/bootstrap-button.js"></script>
-    <script src="/bootstrap/js/bootstrap-collapse.js"></script>
-    <script src="/bootstrap/js/bootstrap-carousel.js"></script>
-    <script src="/bootstrap/js/bootstrap-typeahead.js"></script>
-
+    <script src="/jquery-1.10.2.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
