@@ -108,10 +108,35 @@
 
 
 
-        <h4>raspPi</h4>
-        <p>called inky</p>
-        <p>listening on edp port... house address: 2772
+        <h4>Living room LED lights</h4>
 
+        <p>You can set the light color by messaging the bot <tt>LEDzpln</tt>
+        (thanks to <tt>marktraceur</tt> for the name :) on Freenode. It accepts
+        messages in <tt>#ptopology</tt>:</p>
+
+        <pre><code>LEDzpln: red</code></pre>
+
+        <p>or privately:</p>
+
+        <pre><code>/msg LEDzpln red</code></pre>
+
+        <p>You can specify any <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/color">CSS color
+        value</a> or one of the special values <tt>off</tt> or
+        <tt>rainbow</tt>.</p>
+
+        <p>Although the IRC bot mostly does solid colors, the LEDs themselves
+        are controllable in 198 individual groups of three.  If you are on the
+        Pointless internal network, you can set the colors by sending a UDP
+        datagram with 198 little-endian 16-bit numbers of color format
+        <tt>0bbbbbrrrrrggggg</tt> to hostname <tt>inky</tt> (10.5.0.6), port
+        2772. You can use this for animations and other custom hacks.
+        There is <a href="https://gist.github.com/kmcallister/6589774">example
+        code for Python</a>.</p>
+
+        <p>The LEDs are powered through a labeled power strip so if you want to
+        force the lights off (e.g. because somebody is sleeping in the living
+        room), just turn off that power strip.</p>
 
 
 
